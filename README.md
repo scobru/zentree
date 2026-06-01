@@ -34,15 +34,14 @@ git clone https://github.com/your-username/zentree.git
 ```
 
 ### 2. Configure Cryptographic Public Keys
-For the portal to load your specific links without authentication, you need to publish them under your public keyspace:
-1. Open the project locally or upload the folder to a static host (e.g., GitHub Pages, Vercel, Netlify).
-2. Go to the bottom of the landing page and click **Manage Portal**.
-3. Input a secure **Username** and **Password** (your Master Credentials) and click **Authenticate**.
-4. Once authenticated, copy your public key (you can grab it from your browser's console or by looking at the authenticated URLs).
-5. Open `index.html`, `apps/bookmarks.html`, and `apps/notes.html`.
-6. Update the `PUBLIC_VIEW_KEY` constant with your newly generated public key:
+For the portal to load your specific links without authentication, you need to configure your public view key:
+1. Open **`key-generator.html`** in your browser.
+2. Input your desired secure **Username** and **Password** (your Master Credentials) and click **Derive Public Key**.
+3. Copy the derived public view key.
+4. Open `index.html`, `apps/bookmarks.html`, and `apps/notes.html`.
+5. Locate `PUBLIC_VIEW_KEY` and paste your key inside the empty quotes:
    ```javascript
-   const PUBLIC_VIEW_KEY = 'YOUR_GENERATED_PUBLIC_KEY_HERE';
+   const PUBLIC_VIEW_KEY = 'YOUR_DERIVED_KEY_HERE';
    ```
 
 ### 3. Seed Default Templates
