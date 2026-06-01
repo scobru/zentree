@@ -54,6 +54,19 @@ Simply push your repository to GitHub and enable **GitHub Pages** (Settings -> P
 
 ---
 
+## 🌐 Recommended P2P Relays
+
+ZenTree is pre-configured to sync data across these recommended decentralized peer-to-peer relays:
+- `wss://delay.scobrudot.dev/zen`
+- `wss://zen.akao.io:8420/zen`
+- `wss://zen0.akao.io:8420/zen`
+- `wss://zen1.akao.io:8420/zen`
+
+### 🚀 Spin Up Your Own Relay
+To ensure maximum availability, data longevity, and self-sovereignty, you can run your own dedicated peer. Check out the [ZEN Relay Deployment Guide](https://github.com/akaoio/zen#deploy-a-relay-peer) to deploy your own relay with one single command.
+
+---
+
 ## 🎨 Tech Stack
 
 - **HTML5 & Vanilla CSS**: Premium modern style patterns, responsive flexbox/grid layout, and dynamic HSL color variables.
