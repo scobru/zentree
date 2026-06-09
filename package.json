@@ -1,0 +1,24 @@
+{
+  "name": "zentree",
+  "version": "1.0.0",
+  "description": "ZenTree is a lightweight Linktree alternative that runs entirely on static HTML",
+  "keywords": [
+    "linktree",
+    "static-generator"
+  ],
+  "homepage": "https://github.com/scobru/zentree#readme",
+  "bugs": {
+    "url": "https://github.com/scobru/zentree/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scobru/zentree.git"
+  },
+  "license": "ISC",
+  "author": "scobru",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

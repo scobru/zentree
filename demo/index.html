@@ -532,7 +532,7 @@
     let isAuthenticated = false;
     const sectionsMap = {}; // id -> { name, order }
 
-    zen = new ZEN({ peers: ["wss://delay.scobrudot.dev/zen","wss://zen.akao.io:8420/zen","wss://zen0.akao.io:8420/zen","wss://zen1.akao.io:8420/zen"] });
+    zen = new ZEN({ peers: ["wss://delay.scobrudot.dev/zen"] });
     localStorage.removeItem('zenPeers');
 
     // Bootstrap portal
