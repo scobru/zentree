@@ -44,7 +44,44 @@ For the portal to load your specific links without authentication, you need to c
    const PUBLIC_VIEW_KEY = 'YOUR_DERIVED_KEY_HERE';
    ```
 
-### 3. Seed Default Templates
+### 3. Customize Your Avatar
+
+Open `demo/index.html` and find the profile header section (~line 408):
+
+```html
+<img class="lt-avatar" src="" alt="avatar" style="display:none;"
+  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+<div class="lt-avatar-fallback">ZT</div>
+```
+
+**Option A — URL image (GitHub, CDN, or any direct link):**
+1. Set `src` to your image URL and remove `style="display:none;"`:
+   ```html
+   <img class="lt-avatar" src="https://avatars.githubusercontent.com/u/YOUR_ID?v=4" alt="your name"
+     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+   <div class="lt-avatar-fallback" style="display:none;">AB</div>
+   ```
+2. Update the fallback initials (`AB`) in case the image fails to load.
+
+**Option B — Initials only (no image):**
+Leave `src=""` and just update the fallback text:
+```html
+<img class="lt-avatar" src="" alt="avatar" style="display:none;"
+  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+<div class="lt-avatar-fallback">YN</div>
+```
+
+The gradient ring around the avatar is controlled by `--avatar-ring` in the CSS variables — customize it freely.
+
+Also update the name and bio below the avatar:
+```html
+<h1 class="lt-name">Your Name</h1>
+<p class="lt-bio">Your tagline here.</p>
+```
+
+---
+
+### 4. Seed Default Templates
 After authenticating inside **Manage Portal** for the first time:
 - Click **Seed Defaults** to instantly write a set of beautiful initial templates to your database node!
 - You can now add, edit, or delete any links directly in real-time. Simply hover over any link when logged in to see the red deletion action button.
