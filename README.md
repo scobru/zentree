@@ -38,7 +38,7 @@ For the portal to load your specific links without authentication, you need to c
 1. Open **`key-generator.html`** in your browser.
 2. Input your desired secure **Username** and **Password** (your Master Credentials) and click **Derive Public Key**.
 3. Copy the derived public view key.
-4. Open `index.html`, `apps/bookmarks.html`, and `apps/notes.html`.
+4. Open `index.html`.
 5. Locate `PUBLIC_VIEW_KEY` and paste your key inside the empty quotes:
    ```javascript
    const PUBLIC_VIEW_KEY = 'YOUR_DERIVED_KEY_HERE';
